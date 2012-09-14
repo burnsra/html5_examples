@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
     <meta charset="utf-8">
     <title>HTML5 Examples</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,10 +39,11 @@
           <a class="brand" href="#">HTML5 Examples</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#data">Data</a></li>
-              <li><a href="#forms">Forms</a></li>
-              <li><a href="#video">Video</a></li>
+              <li class="active"><a href="welcome">Home</a></li>
+              <li><a href="canvas">Canvas</a></li>
+              <li><a href="data">Data</a></li>
+              <li><a href="forms">Forms</a></li>
+              <li><a href="video">Video</a></li>
             </ul>
           </div>
         </div>
@@ -52,7 +56,7 @@
 
     </div>
 
-    <script src="${resource(dir: 'js', file: 'bootstrap.min.js')}"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap.min.js')}" type="text/javascript"></script>
 
   </body>
 </html>
