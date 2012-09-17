@@ -13,7 +13,8 @@ class ErrorsController {
             render(view:'/error')
     }
 
-    def notFound = {
-        render(view:'/notFound')
+    def notFound() {
+        def targetPage = request.forwardURI
+        render(model:[targetPage: targetPage], view:'/notFound')
     }
 }

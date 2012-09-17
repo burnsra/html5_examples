@@ -27,7 +27,7 @@
     </div>
     <div class="parallax-layer" style="position:absolute; top:40px;">
         <h1>Oops!</h1>
-        <h2>The page you were looking for could not be found.</h2>
+        <h2>The page you were looking for (${targetPage}) could not be found.</h2>
         <a href="./" title="">Let's go back to your happy place.</a>
         <img id="parallax-guy" src="${resource(dir: 'img', file: 'guy.png')}" alt="">
     </div>
