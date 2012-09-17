@@ -77,6 +77,15 @@ log4j = {
     //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
     //}
 
+    appenders {
+        console name:'stdout', threshold: org.apache.log4j.Level.INFO, layout:pattern(conversionPattern: '%c{2} %m%n')
+        file name:'file', file:'/var/log/grails.log'
+    }
+
+    root {
+        debug 'stdout', 'file'
+    }
+
     error  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP
            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
