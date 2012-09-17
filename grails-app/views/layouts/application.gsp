@@ -39,11 +39,9 @@
           <a class="brand" href="#">HTML5 Examples</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="welcome">Home</a></li>
-              <li><a href="canvas">Canvas</a></li>
-              <li><a href="data">Data</a></li>
-              <li><a href="forms">Forms</a></li>
-              <li><a href="video">Video</a></li>
+              <nav:eachItem var="item">
+              <li class="${item.active ? 'active' : ''}"><g:link controller="${item.controller}" action="${item.action}">${item.title}</g:link></li>
+              </nav:eachItem>
             </ul>
           </div>
         </div>
