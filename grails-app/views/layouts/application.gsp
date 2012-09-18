@@ -24,6 +24,7 @@
     <link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
     <link rel="apple-touch-icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}">
     <link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
+
   </head>
 
   <body>
@@ -40,7 +41,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <nav:eachItem var="item">
-              <li class="${item.active ? 'active' : ''}"><g:link controller="${item.controller}" action="${item.action}">${item.title}</g:link></li>
+              <li class="${item.controller == params.controller ? 'active' : ''}"><g:link controller="${item.controller}" action="${item.action}">${item.title}</g:link></li>
               </nav:eachItem>
             </ul>
           </div>
@@ -49,8 +50,25 @@
     </div>
 
     <div class="container">
-
+    <div class="row-fluid">
+      <div class="well span3">
+      <ul class="nav nav-list">
+        <nav:eachSubItem var="subitem">
+        <li class="${subitem.active ? 'active' : ''}"><g:link controller="${subitem.controller}" action="${subitem.action}">${subitem.title}</g:link></li>
+        </nav:eachSubItem>
+      </ul>
+      </div>
+      <div class="span9">
       <g:layoutBody/>
+      </div>
+    </div>
+    <footer>
+        <ul class="breadcrumb">
+            <li>Controller: ${params.controller} <span class="divider">/</span></li>
+            <li>Action: ${params.action == null ? 'empty' : params.action}</li>
+            <li class="pull-right"><a href="http://github.com/burnsra/html5_examples" target="_blank">&copy; HTML5 Examples <g:formatDate date="${new Date()}" format="yyyy" /></a></li>
+        </ul>
+    </footer>
 
     </div>
 
