@@ -1,5 +1,5 @@
-<p>Click the button to get your coordinates:</p>
-<button class="btn" onclick="getLocation()">Try It</button>
+<p>Click the button to get your location:</p>
+<button class="btn" onclick="getLocation()">Get My Location</button>
 
 <h4>Result:</h4>
 <div id="map" class="well hidden"></div>
