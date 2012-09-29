@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
     <meta http-equiv="X-UA-Compatible" content="IE=8">
     <meta charset="utf-8">
-    <title>HTML5 Examples</title>
+    <title><g:layoutTitle default="HTML5 Examples" /></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'application.css')}" type="text/css">
     <script src="${resource(dir: 'js', file: 'jquery-1.8.1.min.js')}" type="text/javascript"></script>
     <style>
       body {
@@ -54,9 +55,11 @@
     <div class="row-fluid">
       <div class="well span3">
       <ul class="nav nav-list">
-        <li class="nav-header">${params.controller}</li>
+        <g:set var="tmpCategory" value="" />
         <nav:eachSubItem var="subitem">
+        <g:if test="${subitem.group && !subitem.group.equalsIgnoreCase(tmpCategory)}"><li class="nav-header">${subitem.group}</li></g:if>
         <li class="${subitem.active ? 'active' : ''}"><g:link controller="${subitem.controller}" action="${subitem.action}">${subitem.title}</g:link></li>
+        <g:set var="tmpCategory" value="${subitem.group}" />
         </nav:eachSubItem>
       </ul>
       </div>
