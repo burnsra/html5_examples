@@ -11,6 +11,7 @@
     <meta name="author" content="">
 
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+    <script src="${resource(dir: 'js', file: 'jquery-1.8.1.min.js')}" type="text/javascript"></script>
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -53,6 +54,7 @@
     <div class="row-fluid">
       <div class="well span3">
       <ul class="nav nav-list">
+        <li class="nav-header">${params.controller}</li>
         <nav:eachSubItem var="subitem">
         <li class="${subitem.active ? 'active' : ''}"><g:link controller="${subitem.controller}" action="${subitem.action}">${subitem.title}</g:link></li>
         </nav:eachSubItem>
