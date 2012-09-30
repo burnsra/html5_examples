@@ -26,7 +26,7 @@
             <tbody>
             </tbody>
         </table>
-        <button class="btn" onclick="localStorage.clear();">Clear All</button>
+        <button class="btn" onclick="localStorage.clear();window.location = window.location;">Clear All</button>
         </div>
     </div>
     <script type="text/javascript">
@@ -34,7 +34,7 @@
             $('#local_result').hide();
         } else {
             for (var i = 0; i < localStorage.length; i++){
-                $('#local_result_table tr:last').after('<tr><td>'+ localStorage.key(i)+ '</td><td>' + localStorage.getItem(localStorage.key(i)) +'</td><td><button class="btn" onClick="localStorage.removeItem(\'' + localStorage.key(i) + '\');">Clear</button></td></tr>');
+                $('#local_result_table tr:last').after('<tr><td>'+ localStorage.key(i)+ '</td><td>' + localStorage.getItem(localStorage.key(i)) +'</td><td><button class="btn" onClick="localStorage.removeItem(\'' + localStorage.key(i) + '\');window.location = window.location;">Clear</button></td></tr>');
             }
         }
     </script>
@@ -53,7 +53,7 @@
             <tbody>
             </tbody>
         </table>
-        <button class="btn" onclick="sessionStorage.clear();">Clear All</button>
+        <button class="btn" onclick="sessionStorage.clear();window.location = window.location;">Clear All</button>
         </div>
     </div>
     <script type="text/javascript">
@@ -61,7 +61,7 @@
         $('#session_result').hide();
     } else {
         for (var i = 0; i < sessionStorage.length; i++){
-            $('#session_result_table tr:last').after('<tr><td>'+ sessionStorage.key(i)+ '</td><td>' + sessionStorage.getItem(sessionStorage.key(i)) +'</td><td><button class="btn" onClick="sessionStorage.removeItem(\'' + sessionStorage.key(i) + '\');">Clear</button></td></tr>');
+            $('#session_result_table tr:last').after('<tr><td>'+ sessionStorage.key(i)+ '</td><td>' + sessionStorage.getItem(sessionStorage.key(i)) +'</td><td><button class="btn" onClick="sessionStorage.removeItem(\'' + sessionStorage.key(i) + '\');window.location = window.location;">Clear</button></td></tr>');
         }
     }
     </script>
