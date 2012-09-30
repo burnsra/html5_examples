@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2012-09-31 v1.0.3
+# 2012-09-31 v1.0.6
 
 CACHE:
 /html5_examples/static/css/bootstrap.min.css
@@ -11,4 +11,4 @@ NETWORK:
 *
 
 FALLBACK:
-/ /offline.html
+/ /html5_examples/offline.html
