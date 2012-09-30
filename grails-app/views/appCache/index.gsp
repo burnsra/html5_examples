@@ -9,3 +9,9 @@
     <li>Speed - cached resources load faster</li>
     <li>Reduced server load - the browser will only download updated/changed resources from the server</li>
 </ul>
+
+<content tag="help">
+<div class="alert alert-error">
+    Subsequent hits to this page should show the rendering time(R) attribute at the bottom of the page does not change.
+</div>
+</content>
