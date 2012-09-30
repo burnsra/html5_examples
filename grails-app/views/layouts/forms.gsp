@@ -1,4 +1,5 @@
 <g:applyLayout name="application">
+    <div id="${params.controller}" class="${params.action}">
     <h3>
         ${params.controller} / ${params.action}
     </h3>
@@ -77,4 +78,5 @@
             </tbody>
         </table>
     </g:if>
+    </div>
 </g:applyLayout>

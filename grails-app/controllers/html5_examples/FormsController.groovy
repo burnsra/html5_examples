@@ -41,7 +41,7 @@ class FormsController {
         ]
     ]
 
-    def index() { }
+    def index() {}
 
     def color() {}
     def date() {}
