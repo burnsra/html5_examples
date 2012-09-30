@@ -3,7 +3,7 @@
     <h3>
         ${params.controller} / ${params.action}
     </h3>
-    <g:form name="html5_form" controller="${params.controller}" action="${params.action.replaceAll('_', '-')}">
+    <g:form name="html5_form" controller="${params.controller}" action="${params.action}">
     <g:layoutBody />
     <br /><br /><button type="submit" class="btn">Submit</button>
     </g:form>
@@ -79,4 +79,6 @@
         </table>
     </g:if>
     </div>
+
+    <g:pageProperty name="page.help" />
 </g:applyLayout>

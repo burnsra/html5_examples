@@ -65,6 +65,7 @@
       </div>
       <div class="span9">
       <g:layoutBody/>
+      <g:pageProperty name="page.help"/>
       </div>
     </div>
     <footer>
