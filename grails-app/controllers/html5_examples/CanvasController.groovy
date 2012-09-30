@@ -2,7 +2,7 @@ package html5_examples
 
 class CanvasController {
 
-    static navigation = [
+    static nnavigation = [
         order:10
         ,title:'Canvas'
     ]

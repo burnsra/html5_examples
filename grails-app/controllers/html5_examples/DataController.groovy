@@ -2,7 +2,7 @@ package html5_examples
 
 class DataController {
 
-    static navigation = [
+    static nnavigation = [
         order:20
         ,title:'Data'
     ]

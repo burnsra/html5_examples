@@ -3,7 +3,7 @@ package html5_examples
 class FormsController {
 
     static navigation = [
-        order:30
+        order:20
         , title:'Forms'
         , subItems: [
             [group:'Types', action:'color', order:0, title:"Color"]
@@ -50,24 +50,24 @@ class FormsController {
     def email() {}
     def month() {}
     def number() {
-        def formAvailableAttributes = [
+        def fieldAvailableAttributes = [
             max : "Specifies the maximum value allowed"
             , min : "specifies the minimum value allowed"
             , step : "specifies the legal number intervals"
             , value : "Specifies the default value"
         ]
-        def formAttributes = [ min : "0", max : "10", step : "2" ]
-        [formAvailableAttributes:formAvailableAttributes, formAttributes:formAttributes]
+        def fieldAttributes = [ min : "0", max : "10", step : "2" ]
+        [fieldAvailableAttributes:fieldAvailableAttributes, fieldAttributes:fieldAttributes]
     }
     def range() {
-        def formAvailableAttributes = [
+        def fieldAvailableAttributes = [
             max : "Specifies the maximum value allowed"
             , min : "specifies the minimum value allowed"
             , step : "specifies the legal number intervals"
             , value : "Specifies the default value"
         ]
-        def formAttributes = [ min : "0", max : "10" ]
-        [formAvailableAttributes:formAvailableAttributes, formAttributes:formAttributes]
+        def fieldAttributes = [ min : "0", max : "10" ]
+        [fieldAvailableAttributes:fieldAvailableAttributes, fieldAttributes:fieldAttributes]
     }
     def search() {}
     def tel() {}
@@ -78,4 +78,23 @@ class FormsController {
     def datalist() {}
     def keygen() {}
     def output() {}
+
+    def autocomplete() {}
+    def autofocus() {}
+    def form() {}
+    def formaction() {}
+    def formenctype() {}
+    def formmethod() {}
+    def formnovalidate() {
+        def formAttributes = [ novalidate : "novalidate" ]
+        [formAttributes:formAttributes]}
+    def formtarget() {}
+    def height_width() {}
+    def list() {}
+    def min_max() {}
+    def multiple() {}
+    def pattern() {}
+    def placeholder() {}
+    def required() {}
+    def step() {}
 }
