@@ -1,15 +1,20 @@
+<g:if test="${formAttributes}">
+    <g:each in="${formAttributes }">
+        <g:set var="formActions" value="${it.key}='${it.value} '" />
+    </g:each>
+</g:if>
 <g:applyLayout name="application">
     <div id="${params.controller}" class="${params.action}">
     <h3>
         ${params.controller} / ${params.action}
     </h3>
-    <g:form name="html5_form" controller="${params.controller}" action="${params.action}">
+    <form id="html5_form" name="html5_form" action="../${params.controller}/${params.action}#results" ${formActions} method="post">
     <g:layoutBody />
     <br /><br /><button type="submit" class="btn">Submit</button>
-    </g:form>
-    <g:if test="${params[params.action.replaceAll('_', '-')] && params[params.action.replaceAll('_', '-')].length() > 0}">
+    <form>
+    <g:if test="${params.size() > 2}">
         <hr />
-        <h4>Result:</h4>
+        <h4>Result:</h4><a name="results">&nbsp;</a>
         <div id="form_result" class="alert alert-success">
             <table class="table table-bordered">
             <thead>
@@ -35,7 +40,7 @@
         </div>
     </g:if>
 
-    <g:if test="${formAvailableAttributes}">
+    <g:if test="${fieldAvailableAttributes}">
         <h5>Available attributes</h5>
         <table class="table table-bordered table-hover table-striped">
             <thead>
@@ -43,7 +48,7 @@
                 <th>Description</th>
             </thead>
             <tbody>
-                <g:each in="${formAvailableAttributes }">
+                <g:each in="${fieldAvailableAttributes }">
                     <tr>
                         <td>
                             ${it.key}
@@ -57,7 +62,7 @@
         </table>
     </g:if>
 
-    <g:if test="${formAttributes}">
+    <g:if test="${fieldAttributes}">
         <h5>Current attributes</h5>
         <table class="table table-bordered table-hover table-striped">
             <thead>
@@ -65,7 +70,7 @@
                 <th>Description</th>
             </thead>
             <tbody>
-                <g:each in="${formAttributes }">
+                <g:each in="${fieldAttributes }">
                     <tr>
                         <td>
                             ${it.key}
