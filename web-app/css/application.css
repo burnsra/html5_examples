@@ -1,6 +1,14 @@
-table td{
+bbbody {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+table td {
     max-width: 320px;
     word-wrap: break-word;
+}
+
+th.key {
+    width: 20%;
 }
 
 #color_thumbnail {
@@ -11,8 +19,4 @@ table td{
 
 #form_result table {
     margin-bottom: 0;
-}
-
-th.key {
-    width: 20%;
 }

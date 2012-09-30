@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
     <meta http-equiv="X-UA-Compatible" content="IE=8">
     <meta charset="utf-8">
-    <title><g:layoutTitle default="HTML5 Examples" /></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <title><g:layoutTitle default="HTML5 Examples" /></title>
 
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'application.css')}" type="text/css">
-    <script src="${resource(dir: 'js', file: 'jquery-1.8.1.min.js')}" type="text/javascript"></script>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-responsive.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'application.css')}" type="text/css">
+    <script src="${resource(dir: 'js', file: 'jquery.js')}" type="text/javascript"></script>
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,6 +55,7 @@
     <div class="container">
     <div class="row-fluid">
       <div class="well span3">
+      <h4>Navigation</h4>
       <ul class="nav nav-list">
         <g:set var="tmpCategory" value="" />
         <nav:eachSubItem var="subitem">
@@ -79,7 +81,19 @@
 
     </div>
 
-    <script src="${resource(dir: 'js', file: 'bootstrap.min.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-transition.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-alert.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-modal.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-dropdown.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-scrollspy.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-tab.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-tooltip.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-popover.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-button.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-collapse.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-carousel.js')}" type="text/javascript"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap-typeahead.js')}" type="text/javascript"></script>
 
+    <script src="${resource(dir: 'js', file: 'application.js')}" type="text/javascript"></script>
   </body>
 </html>
