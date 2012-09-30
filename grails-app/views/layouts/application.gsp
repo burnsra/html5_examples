@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="../${params.controller}.appcache">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
@@ -70,7 +70,8 @@
     <footer>
         <ul class="breadcrumb">
             <li>Controller: ${params.controller} <span class="divider">/</span></li>
-            <li>Action: ${params.action == null ? 'empty' : params.action}</li>
+            <li>Action: ${params.action == null ? 'empty' : params.action} <span class="divider">/</span></li>
+            <li>Rendered: <g:formatDate date="${new Date()}" format="hh:mm:ss" /></li>
             <li class="pull-right"><a href="http://github.com/burnsra/html5_examples" target="_blank">&copy; HTML5 Examples <g:formatDate date="${new Date()}" format="yyyy" /></a></li>
         </ul>
     </footer>
