@@ -69,9 +69,9 @@
     </div>
     <footer>
         <ul class="breadcrumb">
-            <li>Controller: ${params.controller} <span class="divider">/</span></li>
-            <li>Action: ${params.action == null ? 'empty' : params.action} <span class="divider">/</span></li>
-            <li>Rendered: <g:formatDate date="${new Date()}" format="hh:mm:ss" /></li>
+            <li>C: ${params.controller} <span class="divider">/</span></li>
+            <li>A: ${params.action == null ? 'empty' : params.action} <span class="divider">/</span></li>
+            <li>R: <g:formatDate date="${new Date()}" format="hh:mm:ss" /></li>
             <li class="pull-right"><a href="http://github.com/burnsra/html5_examples" target="_blank">&copy; HTML5 Examples <g:formatDate date="${new Date()}" format="yyyy" /></a></li>
         </ul>
     </footer>
