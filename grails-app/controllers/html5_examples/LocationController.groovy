@@ -3,7 +3,7 @@ package html5_examples
 class LocationController {
 
     static navigation = [
-        order:35
+        order:30
         ,title:'GeoLocation'
         , subItems: [
             [group:'Examples', action:'general', order:0, title:"General"]

@@ -1,2 +1,2 @@
 <label>${params.action.replaceAll('_', '-')}</label>
-<input type="${params.action.replaceAll('_', '-')}" name="${params.action.replaceAll('_', '-')}" value="${params[params.action.replaceAll('_', '-')]}" <g:if test="${formAttributes}"><g:each in="${formAttributes }">${it.key}="${it.value}" </g:each></g:if>/>
+<input type="${params.action.replaceAll('_', '-')}" name="${params.action.replaceAll('_', '-')}" value="${params[params.action.replaceAll('_', '-')]}" <g:if test="${fieldAttributes}"><g:each in="${fieldAttributes }">${it.key}="${it.value}" </g:each></g:if>/>

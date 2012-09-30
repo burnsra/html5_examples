@@ -3,7 +3,7 @@ package html5_examples
 class VideoController {
 
     static navigation = [
-        order:40
+        order:60
         ,title:'Video'
     ]
 
