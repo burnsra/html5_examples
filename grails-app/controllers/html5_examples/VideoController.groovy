@@ -8,6 +8,7 @@ class VideoController {
         , subItems: [
             [group:'Examples', action:'audio', order:5, title:'Audio']
             ,[group:'Examples', action:'video', order:10, title:"Video"]
+            ,[group:'Examples', action:'video_enhanced', order:15, title:'Video Controls']
         ]
     ]
 
@@ -15,4 +16,5 @@ class VideoController {
 
     def audio() {}
     def video() {}
+    def video_enhanced() {}
 }

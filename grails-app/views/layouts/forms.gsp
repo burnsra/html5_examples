@@ -8,7 +8,7 @@
     <h3>
         ${params.controller} / ${params.action}
     </h3>
-    <form id="html5_form" name="html5_form" action="../${params.controller}/${params.action}#results" ${formActions} method="post">
+    <form id="html5_form" name="html5_form" action="../${params.controller}/${params.action}" ${formActions} method="post">
     <g:layoutBody />
     <br /><br /><button type="submit" class="btn">Submit</button>
     <form>
