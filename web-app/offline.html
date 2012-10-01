@@ -1,1 +1,161 @@
-I am offline
+
+<!DOCTYPE html>
+<html lang="en" manifest="../canvas.appcache">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HTML5 Examples</title>
+
+    <link rel="stylesheet" href="/html5_examples/static/css/bootstrap.css" type="text/css">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link rel="stylesheet" href="/html5_examples/static/css/bootstrap-responsive.css" type="text/css">
+    <link rel="stylesheet" href="/html5_examples/static/css/application.css" type="text/css">
+    <script src="/html5_examples/static/js/jquery.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/html5_examples/static/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/html5_examples/static/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/html5_examples/static/images/apple-touch-icon-retina.png">
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">HTML5 Examples</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              
+              <li class=""><a href="/html5_examples/">Home</a></li>
+              
+              <li class=""><a href="/html5_examples/elements/index">Elements</a></li>
+              
+              <li class=""><a href="/html5_examples/forms/index">Forms</a></li>
+              
+              <li class=""><a href="/html5_examples/location/index">GeoLocation</a></li>
+              
+              <li class=""><a href="/html5_examples/storage/index">Storage</a></li>
+              
+              <li class=""><a href="/html5_examples/appCache/index">AppCache</a></li>
+              
+              <li class=""><a href="/html5_examples/video/index">Audio / Video</a></li>
+              
+              <li class="active"><a href="/html5_examples/canvas/index">Canvas</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="row-fluid">
+      <div class="well span3">
+      <h4>Navigation</h4>
+      <ul class="nav nav-list">
+        
+        
+      </ul>
+      </div>
+      <div class="span9">
+      <link rel="stylesheet" href="/html5_examples/static/css/jquery.parallax.css" type="text/css">
+<style>
+#content {
+  padding: 0 70px;
+}
+#parallax {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 980px;
+  height: 380px;
+}
+</style>
+
+<div class="parallax-viewport" id="parallax">
+    <div class="parallax-layer" style="width:980px; height:500px;">
+        <img src="/html5_examples/static/img/bkg_A.png" alt="" style="position:absolute; left:40px;">
+    </div>
+    <div class="parallax-layer" style="width:980px; height:500px;">
+        <img src="/html5_examples/static/img/bkg_B.png" alt="">
+    </div>
+    <div class="parallax-layer" style="width:980px; height:500px;">
+        <img src="/html5_examples/static/img/bkg_C.png" alt="">
+    </div>
+    <div class="parallax-layer" style="width:980px; height:500px;">
+        <img src="/html5_examples/static/img/bkg_D.png" alt="">
+    </div>
+    <div class="parallax-layer" style="position:absolute; top:40px;">
+        <h1>Oops!</h1>
+        <h2>It appears you are working offline.</h2>
+        <img id="parallax-guy" src="/html5_examples/static/img/guy.png" alt="">
+    </div>
+</div>
+
+<script src="/html5_examples/static/js/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script src="/html5_examples/static/js/jquery.parallax.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+        jQuery(window).load(function () {
+            // Declare parallax on layers
+            jQuery('.parallax-layer').parallax(
+                {}
+                ,{xparallax: '64px'}
+                ,{xparallax: '128px'}
+                ,{xparallax: '256px'}
+                ,{xparallax: '192px'}
+                ,{xparallax: '0px'
+                    ,yparallax: '0px'
+                }
+            );
+        });
+    </script>
+      
+      </div>
+    </div>
+    <footer>
+        <ul class="breadcrumb">
+            <li>C: canvas <span class="divider">/</span></li>
+            <li>A: image <span class="divider">/</span></li>
+            <li>R: 09:50:05</li>
+            <li class="pull-right"><a href="http://github.com/burnsra/html5_examples" target="_blank">&copy; HTML5 Examples 2012</a></li>
+        </ul>
+    </footer>
+
+    </div>
+
+    <script src="/html5_examples/static/js/bootstrap-transition.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-alert.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-modal.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-scrollspy.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-tab.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-tooltip.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-popover.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-button.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-collapse.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-carousel.js" type="text/javascript"></script>
+    <script src="/html5_examples/static/js/bootstrap-typeahead.js" type="text/javascript"></script>
+
+    <script src="/html5_examples/static/js/application.js" type="text/javascript"></script>
+  </body>
+</html>
