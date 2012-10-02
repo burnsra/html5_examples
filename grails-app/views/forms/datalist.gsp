@@ -5,5 +5,8 @@
   <option value="Opera">
   <option value="Safari">
 </datalist>
-<label>${params.action.replaceAll('_', '-')}</label>
-<input list="browsers" name="${params.action.replaceAll('_', '-')}" />
+<label>Browsers A</label>
+<input list="browsers" name="browser_a" />
+
+<label>Browser B</label>
+<input list="browsers" name="browser_b" />
