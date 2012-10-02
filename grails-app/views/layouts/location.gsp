@@ -11,6 +11,8 @@
         <div id="map" class="alert alert-success">
             <div id="mapholder"></div>
         </div>
+        <div id="map_detail" class="alert alert-info" class="hidden">
+        </div>
     </div>
     <script src="${resource(dir: 'js/geolocation', file: params.action+'.js')}" type="text/javascript"></script>
 </g:applyLayout>
