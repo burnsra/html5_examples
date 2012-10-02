@@ -1,0 +1,21 @@
+<g:form name="myCanvasForm" controller="${params.controller}" action="${params.action}">
+    <label>Color</label>
+    <input type="color" name="canvasColor" value="${params.canvasColor}" />
+    <br /><br /><button type="submit" class="btn">Submit</button>
+</g:form>
+
+<g:if test="${!params.canvasColor}">
+    <g:set var="params.canvasColor" value="#FF0000" />
+</g:if>
+
+<canvas id="myCanvas" width="500" height="600">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script type="text/javascript">
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="${params.canvasColor}";
+    ctx.fillRect(0,0,150,75);
+</script>
